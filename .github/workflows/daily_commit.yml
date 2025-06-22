@@ -16,9 +16,8 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Append daily timestamp - 23f1000733@ds.study.iitm.ac.in
-          run: |
-            echo "IC Daily run: $(date -u '+%Y-%m-%d %H:%M:%S UTC') IC" >> daily-log.txt
-
+        run: |
+          echo "IC Daily run: $(date -u '+%Y-%m-%d %H:%M:%S UTC') IC" >> daily-log.txt
 
       - name: Configure Git
         run: |
